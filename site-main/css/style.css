@@ -8,7 +8,7 @@ body {
 }
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     height: 100px;
     border: 15px double rgba(30, 213, 212, 0.73);
@@ -57,4 +57,33 @@ a:link {
 .d_c{
     text-align: center;
     font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    border: 5px solid #5e5373;
+}
+.container2{
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.block__element2{
+    flex: 0 1 50%;
+}
+.block__element{
+    flex: 0 1 25%;
+}
+.one{
+    border: 5px solid #5e5373;
+}
+.two{
+    border: 5px solid #5e5373;
+}
+.three{
+    border: 5px solid #5e5373;
+}
+.four{
+    border: 5px solid #5e5373;
 }
