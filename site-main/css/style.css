@@ -3,87 +3,116 @@ body {
     background-color: white;
     font-family: 'Pacifico', cursive;
 }
+
 * {
     box-sizing: border-box;
 }
+
 .header {
     display: flex;
     justify-content: space-around;
     text-align: center;
     height: 100px;
     border: 15px double rgba(30, 213, 212, 0.73);
-    font-size: 320%;
+    font-size: xx-large;
 }
+
 a:link {
     color: green;
     background-color: transparent;
     text-decoration: none;
 }
+
 .fio {
     text-align: center;
     margin-top: 120px;
     text-shadow: blue 2px 3px 15px;
     font-size: 230%;
 }
+
 .info {
     margin-top: 120px;
     text-align: left;
     text-decoration: underline red;
     font-size: 180%;
 }
+
 .like {
     margin-top: 120px;
     text-decoration: underline red;
     text-align: right;
     font-size: 180%;
 }
-.table,tr,td{
+
+.table, tr, td {
     margin: auto;
     width: 150px;
     height: 150px;
 }
-.l_t{
+
+.l_t {
     text-align: left;
     font-size: 30px;
 }
-.r_t{
+
+.r_t {
     text-align: right;
     font-size: 20px;
 }
-.r_c{
+
+.r_c {
     text-align: right;
     font-size: 20px;
 }
-.d_c{
+
+.d_c {
     text-align: center;
     font-size: 20px;
 }
-.container{
+
+.container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     text-align: center;
     border: 5px solid #5e5373;
 }
-.container2{
+
+.container2 {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     text-align: center;
 }
-.block__element2{
+
+.block__element2 {
     flex: 0 1 50%;
 }
-.block__element{
+
+.block__element {
     flex: 0 1 25%;
 }
-.one{
+
+.one {
     border: 5px solid #5e5373;
 }
-.two{
+
+.two {
     border: 5px solid #5e5373;
 }
-.three{
+
+.three {
     border: 5px solid #5e5373;
 }
-.four{
+
+.four {
     border: 5px solid #5e5373;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 350px) and (max-width: 1280px) {
+    body {
+        word-wrap: break-word;
+    }
 }
