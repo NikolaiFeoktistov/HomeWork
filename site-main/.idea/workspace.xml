@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,6 +45,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kolaf\Desktop\Homework\site-main\css" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\kolaf\AppData\Roaming\Subversion</configuration>
@@ -70,6 +75,8 @@
       <workItem from="1633356941239" duration="22000" />
       <workItem from="1633431047767" duration="1706000" />
       <workItem from="1633496586874" duration="2966000" />
+      <workItem from="1633529372650" duration="611000" />
+      <workItem from="1633605134859" duration="8149000" />
     </task>
     <servers />
   </component>
