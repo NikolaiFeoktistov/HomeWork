@@ -1,19 +1,21 @@
+<?php
+include 'day-night.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Flex-Grid</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/night.css">
-    <link rel="stylesheet" href="css/light.css">
 </head>
 <body>
 <img src="photo/download.jpg"
      style="width: 100px;height: 100px; float:left;border: 15px double #ffe100;" alt>
 <header class="header">
-    <a href="site.html">Главная</a>
+    <a href="site.php">Главная</a>
     <a>Flex/Grid</a>
-    <a href="table.html">Таблица Менделеева</a>
+    <a href="table.php">Таблица Менделеева</a>
+    <a href="works.php">Домашняя работа 08.10</a>
 </header>
 <main class="main_flex-grid">
     <section class="container">
