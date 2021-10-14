@@ -42,27 +42,39 @@ include 'day-night.php';
     </div>
     <div class="soglas-glas">
         <?php
-        $text = "Я студент МГТУ. Учусь на 2 курсе. Мне 18 лет. Хобби: компьютерные игры. Все занятия, которые прошли понравились. Спать не хотелось).";
-        $pattern = '~(?<glas>[аеёиоуыэюя])|(?<soglas>[бвгджзйклмнпрстфхцчшщъь])~iu';
-        preg_match_all($pattern, $text, $a);
-        $glas = count(array_filter($a['glas']));
-        $soglas = count(array_filter($a['soglas']));
+        function soglas_glas()
+        {
+            $text = "Я студент МГТУ. Учусь на 2 курсе. Мне 18 лет. Хобби: компьютерные игры. Все занятия, которые прошли понравились. Спать не хотелось).";
+            $pattern = '~(?<glas>[аеёиоуыэюя])|(?<soglas>[бвгджзйклмнпрстфхцчшщъь])~iu';
+            preg_match_all($pattern, $text, $a);
+            $glas = count(array_filter($a['glas']));
+            $soglas = count(array_filter($a['soglas']));
 
-        echo 'Гласных букв: ' . $glas . '<br />Согласных букв: ' . $soglas;
+            echo 'Гласных букв: ' . $glas . '<br />Согласных букв: ' . $soglas;
+        }
+        soglas_glas()
         ?>
     </div>
     <div class="count_words">
         <?php
-        $text1 = "Я студент МГТУ. Учусь на 2 курсе. Мне 18 лет. Хобби: компьютерные игры. Все занятия, которые прошли понравились. Спать не хотелось).";
-        echo "Всего слов: " . str_word_count($text1); // Почему 41?
+        function count_words()
+        {
+            $text1 = "Я студент МГТУ. Учусь на 2 курсе. Мне 18 лет. Хобби: компьютерные игры. Все занятия, которые прошли понравились. Спать не хотелось).";
+            echo "Всего слов: " . str_word_count($text1); // Почему 42?
+        }
+
+        count_words();
         ?>
     </div>
     <div class="date">
         <?php
-        $date1 = date_create("19-12-2002");
-        $date2 = date_create("now");
-        $result = date_diff($date1,$date2);
-        echo "Количество дней : ". $result->days;
+        function d_t(){
+            $date1 = date_create("19-12-2002");
+            $date2 = date_create("now");
+            $result = date_diff($date1, $date2);
+            echo "Количество дней : " . $result->days;
+        }
+        d_t();
         ?>
     </div>
 </main>
