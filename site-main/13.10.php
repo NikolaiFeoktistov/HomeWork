@@ -60,4 +60,14 @@
 //}
 //$a = com();
 //echo $a;
+
+function com(){
+    $n=5;
+    if ($n<2)
+        return $n;
+    else
+        return (com($n-1)+com($n-2));
+}
+$a=com();
+echo $a
 ?>

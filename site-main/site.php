@@ -19,6 +19,7 @@ include 'day-night.php';
     <a href="table.php">Таблица Менделеева</a>
     <a href="flex-grid.php">Flex/Grid</a>
     <a href="works.php">Домашняя работа 08.10</a>
+    <a href="authorization.php" >Авторизация на сайте</a>
 </header>
 <img src="photo/i.jpg"
      style="max-width: 100vw;max-height: 100vh;display: flex; float:left; border: 15px double #76c14c;" alt>
