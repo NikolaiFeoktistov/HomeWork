@@ -1,5 +1,23 @@
 <?php
-include 'day-night.php';
+//session_destroy()
+//include 'day-night.php';
+session_start();
+$_SESSION['page'] = "http:/$_SERVER[REQUEST_URI]";
+
+if (isset($_POST['sub'])) {
+    if ($_POST['select'] == 'green') {
+        echo "<body style='background-color:green'>";
+    }
+    elseif ($_POST['select'] == 'red') {
+        echo "<body style='background-color:red'>";
+    }
+    elseif ($_POST['select'] == 'yellow') {
+        echo "<body style='background-color:yellow'>";
+    }
+    elseif ($_POST['select'] == 'white') {
+        echo "<body style='background-color:white'>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +28,7 @@ include 'day-night.php';
     <title>My site</title>
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 <body>
 <img src="photo/download.jpg"
@@ -19,11 +38,22 @@ include 'day-night.php';
     <a href="table.php">Таблица Менделеева</a>
     <a href="flex-grid.php">Flex/Grid</a>
     <a href="works.php">Домашняя работа 08.10</a>
-    <a href="authorization.php" >Авторизация на сайте</a>
+    <a href="authorization.php">Авторизация на сайте</a>
 </header>
 <img src="photo/i.jpg"
      style="max-width: 100vw;max-height: 100vh;display: flex; float:left; border: 15px double #76c14c;" alt>
 <main class="main">
+    <form method="post">
+        <div class="bord">
+            <select name = "select" class="bord">
+                <option value="green" name="green" style="background: green" >Зелёный</option>
+                <option value="red" name="red" style="background: red">Красный</option>
+                <option value="yellow" name="yellow" style="background: yellow">Жёлтый</option>
+                <option value="white" name="white" style="background: white">Исходный</option>
+            </select>
+            <input name="sub" type="submit" class="but" value="Изменить цвет">
+        </div>
+    </form>
     <div class="fio">
         <div>Феоктистов Николай Владимирович</div>
     </div>
@@ -53,6 +83,7 @@ include 'day-night.php';
 
             echo 'Гласных букв: ' . $glas . '<br />Согласных букв: ' . $soglas;
         }
+
         soglas_glas()
         ?>
     </div>
@@ -69,12 +100,14 @@ include 'day-night.php';
     </div>
     <div class="date">
         <?php
-        function d_t(){
+        function d_t()
+        {
             $date1 = date_create("19-12-2002");
             $date2 = date_create("now");
             $result = date_diff($date1, $date2);
             echo "Количество дней : " . $result->days;
         }
+
         d_t();
         ?>
     </div>

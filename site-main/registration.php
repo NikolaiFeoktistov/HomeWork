@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (count($_POST) > 0) {
     $login = sha1(trim($_POST['login']));
     $password = sha1(trim($_POST['password']));

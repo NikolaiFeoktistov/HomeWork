@@ -1,4 +1,7 @@
 <?php
+session_start();
+$_SESSION['page'] ="http://$_SERVER[REQUEST_URI]";
+$_SESSION['user_name']=$_POST['login'];
 if (count($_POST) > 0) {
     $login = sha1(trim($_POST['login']));
     $password = sha1(trim($_POST['password']));
