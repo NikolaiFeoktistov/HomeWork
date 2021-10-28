@@ -27,19 +27,11 @@ if (isset($_POST['sub'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 <body>
 <img src="photo/download.jpg"
      style="width: 100px;height: 100px; display:block;float:left;border: 15px double #ffe100;" alt>
-<header class="header">
-    <a>Мой первый сайт</a>
-    <a href="table.php">Таблица Менделеева</a>
-    <a href="flex-grid.php">Flex/Grid</a>
-    <a href="works.php">Домашняя работа 08.10</a>
-    <a href="authorization.php">Авторизация на сайте</a>
-</header>
+<?php require_once ("header.php"); ?>
 <img src="photo/i.jpg"
      style="max-width: 100vw;max-height: 100vh;display: flex; float:left; border: 15px double #76c14c;" alt>
 <main class="main">
